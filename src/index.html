@@ -8,10 +8,11 @@
     <a href="#" class="logo"><img src="img/cfp-logo.png" alt=""></a>
     @include('partials/header.html')
     <main class="main">
-        <section class="main-slider__wrap">
+        <div class="main-slider__wrap">
           <div class="swiper main-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide overview" style="background-image: url('img/bg-screen-1.jpg'); background-repeat: no-repeat; background-position: left top; background-size: cover;">
+              <section class="swiper-slide overview">
+                <div class="overview__wrapper" style="background-image: url('img/bg-screen-1.jpg'); background-repeat: no-repeat; background-position: left top; background-size: cover;">
                 <div class="overlay"></div>
                 <div class="overview__wrap">
                   <h1 class="overview__title">
@@ -22,32 +23,73 @@
                   </h1>
                   <a href="#" class="overview__btn btn">Learn More</a>
                 </div>
-              </div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div>
-              </div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-5.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-6.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-7.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-8.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-9.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-10.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
-              <div class="swiper-slide" style="background-image: url('img/bg-screen-11.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <div class="overlay"></div></div>
+                </div>
+              </section>
+              <section class="swiper-slide solutions">
+                <div class="solutions__wrapper" style="background-image: url('img/bg-screen-2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                  <div class="solutions__flex">
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                    <div class="solutions__item"><img src="img/alexander_aann_aolutions_aogo-removebg-preview.png" alt=""></div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-leadership">
+                <div class="cf-leadership__wrapper" style="background-image: url('img/bg-screen-3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-board">
+                <div class="cf-board__wrapper" style="background-image: url('img/bg-screen-2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide amc">
+                <div class="amc__wrapper" style="background-image: url('img/bg-screen-5.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide ingeus">
+                <div class="ingeus__wrapper" style="background-image: url('img/bg-screen-6.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-sustainability">
+                <div class="cf-sustainability__wrapper" style="background-image: url('img/bg-screen-7.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-diversity">
+                <div class="cf-diversity__wrapper" style="background-image: url('img/bg-screen-8.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-equity">
+                <div class="cf-equity__wrapper" style="background-image: url('img/bg-screen-9.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide cf-projects">
+                <div class="cf-projects__wrapper" style="background-image: url('img/bg-screen-10.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
+              <section class="swiper-slide emr">
+                <div class="emr__wrapper" style="background-image: url('img/bg-screen-11.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  <div class="overlay"></div>
+                </div>
+              </section>
             </div>
             <div class="swiper-pagination"></div>
           </div>
-        </section>
+        </div>
     </main>
     @include('partials/footer.html')
   </div>
