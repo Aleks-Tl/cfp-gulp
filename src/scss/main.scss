@@ -359,16 +359,22 @@
       padding-top: 160px;
     }
 
-    // .solutions__grid
+    // .solutions__flex
 
     &__flex {
-      width: 1650px;
-      display: flex;
-      flex-wrap: wrap;
+      max-width: 1650px;
+      display: grid;
+      grid-template-columns: repeat(5, 310px);
+      gap: 10px;
       justify-content: center;
-      row-gap: 10px;
-      column-gap: 10px;
+      //flex-wrap: wrap;
+      //justify-content: center;
+      //row-gap: 10px;
+      //column-gap: 10px;
       margin-left: 50px;
+      @media (max-width: 1850px){
+        grid-template-columns: repeat(4, 310px);
+      }
     }
 		// .solutions__item
 
@@ -417,9 +423,8 @@
           z-index: 10;
         }
       }
-      &:nth-child(2n+6),
-      &:nth-child(2n+7) {
-        transform: translateY(-35px);
+      &:not(:nth-child(-n + 5)) {
+        transform: translate(50%, -35px);
         &:hover .solutions-card__side_front {
           transform: rotateY(180deg);
           z-index: 2;
@@ -427,6 +432,25 @@
         &:hover .solutions-card__side_back {
           transform: rotateY(0deg);
           z-index: 2;
+        }
+      }
+      &:nth-child(5) {
+        @media (max-width: 1850px){
+            transform: translate(50%, -35px);
+        }
+      }
+      &:nth-child(8)  {
+        @media (max-width: 1850px){
+          grid-row: 3 / 4;
+          grid-column: 1 / 2;
+          transform: translate(320px, -100px) !important;
+        }
+      }
+      &:nth-child(9)  {
+        @media (max-width: 1850px){
+          grid-row: 3 / 4;
+          grid-column: 3 / 4;
+          transform: translate(0px, -100px);
         }
       }
 
@@ -438,6 +462,9 @@
         line-height: 150%;
         text-transform: uppercase;
         color: var(--mainColor);
+        @media (max-width: 1750px){
+            font-size: 18px;
+        }
       }
 
       // .solutions-card__text
@@ -448,6 +475,11 @@
         line-height: 150%;
         color: rgba(255, 255, 255, 0.8);
         padding: 0 35px;
+        @media (max-width: 1750px){
+            margin-top: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
       }
     }
 }
