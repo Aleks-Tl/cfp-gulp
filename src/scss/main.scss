@@ -11,17 +11,18 @@
   left: 40px;
   top: 30px;
   z-index: 101;
+  width: 150px;
   @media (max-width: 1500px){
       width: 150px;
   }
   @media (max-width: 992px){
-      width: 120px;
+      width: 100px;
       height: 50px;
       left: 15px;
       top: 10px;
   }
   @media (max-width: 576px){
-      width: 100px;
+      width: 80px;
   }
 }
 
@@ -371,7 +372,6 @@
 // Section Solutions ========================================================================================================================================================
 
 .solutions {
-
 		// .solutions__wrapper
 
 		&__wrapper {
@@ -384,6 +384,7 @@
         background-position: center !important;
         background-repeat: repeat !important;
         background-size: contain !important;
+        padding-bottom: 60px;
         &:after {
           content: '';
           position: absolute;
@@ -600,4 +601,238 @@
       }
     }
 }
+
+// SECTION CF-LEADERSHIP START ========================================================================================================================================================
+
+.cf-leadership {
+
+		// .cf-leadership__wrapper
+
+		&__wrapper {
+      @media (max-width: 768px){
+        position: relative;
+        background-position: center !important;
+        background-repeat: repeat !important;
+        background-size: contain !important;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background-image: url('../img/bg-screen-3.jpg');
+          filter: blur(7px);
+        }
+      }
+    }
+
+    .content {
+      // .content__text
+
+      &__text {
+        p {
+          margin-bottom: 20px;
+        }
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+      }
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    // .content__wrap
+
+		&__box {
+      padding: 50px 70px;
+      background-color: rgba(0,0,0,0.4);
+      backdrop-filter: blur(20px);
+      @media (max-width: 768px){
+          padding: 35px;
+      }
+      @media (max-width: 480px){
+          padding: 20px;
+      }
+    }
+
+		// .content__cf-leadership
+
+		&__cf-leadership {
+      height: 60%;
+      width: 33%;
+      margin-left: 145px;
+      @media (max-width: 1500px){
+          width: 60%;
+          height: auto;
+          margin-left: 100px;
+      }
+      @media (max-width: 1200px){
+          margin-left: 50px;
+          width: 55%;
+      }
+      @media (max-width: 768px){
+          width: 100%;
+          height: 100%;
+          margin-left: 0;
+      }
+    }
+
+		// .content__abr
+
+		&__abr {
+      margin-bottom: 15px;
+      @media (max-width: 768px){
+          img {
+            width: 100px;
+          }
+      }
+    }
+
+		// .content__title
+
+		&__title {
+      margin-bottom: 20px;
+    }
+
+		// .content__btn
+
+		&__btn {
+      padding: 15px 55px;
+      display: inline-block;
+      @media (max-width: 480px){
+          padding: 15px 0px;
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+      }
+    }
+}
+
+// SECTION CF-LEADERSHIP END ========================================================================================================================================================
+
+
+// SECTION CF-BOARD START ========================================================================================================================================================
+
+.cf-board {
+
+		// .cf-board__wrapper
+
+		&__wrapper {
+      @media (max-width: 768px){
+        position: relative;
+        background-position: center !important;
+        background-repeat: repeat !important;
+        background-size: contain !important;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background-image: url('../img/bg-screen-2.jpg');
+          filter: blur(7px);
+        }
+      }
+    }
+
+    .content {
+
+      // .content__box
+
+      &__box {
+        @media (max-width: 1400px){
+            padding: 40px;
+        }
+        @media (max-width: 1200px){
+            padding: 20px 30px;
+        }
+        @media (max-width: 480px){
+          padding: 20px;
+        }
+      }
+
+      // .content__cf-board
+
+      &__cf-board {
+        height: auto;
+        width: 60%;
+        margin-left: 145px;
+        @media (max-width: 1400px){
+            margin-left: 50px;
+            width: 70%;
+        }
+        @media (max-width: 992px){
+            margin-left: 30px;
+            width: 65%;
+        }
+        @media (max-width: 768px){
+          width: 100%;
+          height: 100%;
+          margin-left: 0;
+        }
+      }
+
+      // .content__logo
+
+      &__logo {
+        @media (max-width: 480px){
+            img {
+              width: 200px;
+            }
+        }
+      }
+
+      // .content__title
+
+      &__title {
+        max-width: 540px;
+      }
+
+      // .content__text
+
+      &__text {
+
+        // .content__text_flex
+
+        &_flex {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 30px;
+          row-gap: 40px;
+          & > * {
+            flex: 0 1 48%;
+          }
+          @media (max-width: 1400px){
+              flex-direction: column;
+              row-gap: 20px;
+          }
+        }
+      }
+
+      // .content__btn
+
+      &__btn {
+        max-width: fit-content;
+        align-self: flex-start;
+        @media (max-width: 480px){
+          padding: 15px 0px;
+          max-width: 100%;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+  }
+}
+
+// SECTION CF-BOARD START ========================================================================================================================================================
+
 
